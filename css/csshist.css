@@ -9,12 +9,28 @@
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
     height: 60%;
-    width: 280%;
+    width: 300%;
     
 }
 #logo{
     display: flex;
     justify-content: center;
+}
+
+
+#logo:hover{
+    animation: logo_animation 0.5s infinite;
+}
+
+
+@keyframes logo_animation {
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(115%);
+    }
+    
 }
 
 #carrusel-contenido {
@@ -111,7 +127,7 @@ body{
 }
 
 #main{
-    margin-top: 76.3%;
+    margin-top: 81%;
 }
 
 
@@ -1290,7 +1306,8 @@ a{
 
 
 #commenta{
-background-color: white;
+background-color: black;
+color: white;
 }
 
 #comments{
