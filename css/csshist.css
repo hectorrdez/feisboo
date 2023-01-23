@@ -124,10 +124,15 @@
 body{
     background-color: #203360;
     margin: 0;
+    background-image: url(/fotos_historias/back.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 15%;
 }
 
 #main{
     margin-top: 81%;
+    background-color: #203360;
 }
 
 
