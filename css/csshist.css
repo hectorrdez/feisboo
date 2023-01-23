@@ -15,26 +15,27 @@
 #logo{
     display: flex;
     justify-content: center;
+    transform: scale(50%);
 }
 
 
 #logo:hover{
-    animation: logo_animation 0.5s infinite;
+    animation: logo_animation 0.5s linear;
 }
 
 
 @keyframes logo_animation {
     0%{
-        transform: scale(100%);
+        transform: scale(50%);
     }
     50%{
-        transform: scale(115%);
+        transform: scale(60%);
     }
     
 }
 
 #carrusel-contenido {
-    margin-top: 55%;
+    margin-top: 119%;
     overflow: hidden;
     text-align: left;
     background-color: #3b5998;
