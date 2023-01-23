@@ -1,0 +1,274 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7vh;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.cajaPrimera
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 308px;
+}
+.logoNav
+{
+    min-height: 50px;
+    min-width: 50px;
+    background-color: #ffffff;
+}
+.busquedaNav
+{
+    min-height: 35px;
+    width: 200px;
+    border: none;
+    border-radius: 57px 57px 57px 57px;
+    text-align: center;
+    background-color: #ececec;
+}
+
+.cajaCentral
+{
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 308px;
+}
+.centralBoxes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 7vh;
+}
+.centralBoxes:hover
+{
+    border-bottom: 3px solid #3B5998;
+}
+
+.centralBtn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    min-height: 50px;
+    min-width: 100px;
+    background-color: #ffffff;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.centralBtn:hover
+{
+    background-color: #e0e0e0;
+    border-radius: 50px;
+}
+.centralBtn a
+{
+    text-decoration: none;
+    color: #969696;
+    font-size: 24px;
+}
+.centralBtn a:hover
+{
+    color:#3B5998;
+}
+.cajaTercera
+{
+    display: flex;
+    justify-content: center;
+    width: 308px;
+}
+.elementosCajaTercera
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+}
+.circularNavBtn
+{
+    min-height: 40px;
+    min-width: 40px;
+    background-color: #f2f2f2;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circularNavBtn:hover
+{
+    background-color: #d6d6d6;
+}
+.circularNavBtn a
+{
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 20px;
+}
+.searchFriendsBtn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 35px;
+    background-color: #c5e5ff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.searchFriendsBtn a
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 10.5pt;
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+}
+
+main
+{
+    display: flex;
+    min-height: 93vh;
+    background-color: #f2f2f2;
+    box-shadow: inset 0px 0px 5px -2px rgba(0,0,0,0.75);
+}
+main aside
+{
+    background-color: #ffffff;
+    max-width: 20vw;
+    box-shadow: inset 0px 0px 5px -2px rgba(0,0,0,0.75);
+}
+.sectionTitle
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 23pt;
+    color: #0f0f0f;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.sectionTitle:hover
+{
+    background-color: #ffffff;
+}
+.asideNav
+{
+    display: flex;
+}
+.asideNav p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+    margin-left: 10px;
+    color:#1f1f1f;
+    background-color: #f2f2f2;
+
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 300px;
+}
+
+section p
+{
+    color:#1f1f1f;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+main aside section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7vh;
+    font-size: 15pt;
+    transition: background-color 0.2s;
+}
+main aside section:hover
+{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+main aside section a
+{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.friendList
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80vw;
+}
+.friendsSection
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 70vw;
+
+    min-height: 40vh;
+}
+main section article
+{
+    min-height: 40vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+main section article img
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.friendCard
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.friendCard form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.friendCard form input
+{
+    min-height: 50px;
+    min-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.friendCard p
+{
+    font-weight: bold;
+}
