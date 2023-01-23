@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/csshist.css">
+</head>
+<body>
+    <div id="main">
+        <div id="carrusel-contenido">
+            <div id="logo">
+                <!--COLOCAR EL LINK A LA PÁGINA PRINCIPAL-->
+                <a href=""><img src="fotos_historias/logo.png" alt=""></a>
+            </div>
+            <div id="carrusel-caja">
+                <div class="carrusel-elemento">
+                    <img class="imagenes" src="fotos_historias/7.jpg" >
+                </div>
+                <div class="carrusel-elemento">   
+                    <img class="imagenes" src="fotos_historias/8.jpg">
+                </div>
+                <div class="carrusel-elemento">   
+                    <img class="imagenes" src="fotos_historias/9.jpg">                        
+                </div>
+            </div>
+        </div>
+
+
+    <!--COLOCAR EL LINK A LA PÁGINA DEL USUARIO-->
+        <div id="name">
+            <!--COLOCAR EL NOMBRE DEL USUARIO-->
+            <a href="">@juanmartin</a>
+        </div>
+
+
+
+
+        <input type="text" id="comment" placeholder="Enviar un mensaje">
+        <button id="like" onclick="liked()">
+            <i class="i"></i>
+            <span class="icon">Like</span>
+          </button>
+          <script>
+            function liked(){
+              var element = document.getElementById("like");
+              element.classList.toggle("liked");
+            }
+          </script>
+
+
+        <p></p>
+        <div class="emoji  emoji--love">
+            <div class="emoji__heart"></div>
+        </div>
+        <div class="emoji  emoji--haha">
+            <div class="emoji__face">
+                <div class="emoji__eyes"></div>
+                <div class="emoji__mouth">
+                    <div class="emoji__tongue"></div>
+                </div>
+            </div>
+        </div>
+        <div class="emoji  emoji--yay">
+            <div class="emoji__face">
+                <div class="emoji__eyebrows"></div>
+                <div class="emoji__mouth"></div>
+            </div>
+        </div>
+        <div class="emoji  emoji--wow">
+            <div class="emoji__face">
+                <div class="emoji__eyebrows"></div>
+                <div class="emoji__eyes"></div>
+                <div class="emoji__mouth"></div>
+            </div>
+        </div>
+        <div class="emoji  emoji--sad">
+            <div class="emoji__face">
+                <div class="emoji__eyebrows"></div>
+                <div class="emoji__eyes"></div>
+                <div class="emoji__mouth"></div>
+            </div>
+        </div>
+        <div class="emoji  emoji--angry">
+            <div class="emoji__face">
+                <div class="emoji__eyebrows"></div>
+                <div class="emoji__eyes"></div>
+                <div class="emoji__mouth"></div>
+            </div>
+        </div>  
+    </div>
+    <div id="commenta">
+         <b>COMENTARIOS</b>
+    </div>
+    <div id="comments">
+            <div id="c1">
+                    <img src="fotos_historias/profile.png" alt="profile">
+            </div> 
+            <div id="c1com">
+                    Buena foto
+            </div>
+
+            <br></br>
+
+            <div id="c1">
+                <img src="fotos_historias/profile.png" alt="profile">
+            </div> 
+            <div id="c1com">
+                Me encanta ❤️❤️❤️
+            </div>
+    </div>
+    <div id="comments2">
+        <div id="c1">
+                <img src="fotos_historias/profile.png" alt="profile">
+        </div> 
+        <div id="c2com">
+                Que sitios más bonitos!!!!
+        </div>
+
+        <br></br>
+
+        <div id="c2">
+            <img src="fotos_historias/profile.png" alt="profile">
+        </div> 
+        <div id="c2com">
+            Felices fiestas 😁😁
+        </div>
+</div>
+</body>
+</html>
