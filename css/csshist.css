@@ -40,7 +40,8 @@
     overflow: hidden;
     text-align: left;
     background-color: #3b5998;
-    border: 5px black solid;
+    border-top: 5px black solid;
+    
     
 }
 .imagenes{
@@ -137,6 +138,8 @@ body{
 #main{
     margin-top: 81%;
     background-color: #203360;
+    border-right: 5px black solid;
+    border-left: 5px black solid;
 }
 
 
@@ -1339,10 +1342,7 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 5px black solid;
-    border-right: 5px black solid;
-    border-bottom: 5px black solid;
-    border-top: 5px black solid;
+    border: 5px black solid;
 }
 
 #c2 img{
