@@ -12,6 +12,7 @@
     width: 300%;
     
 }
+
 #logo{
     display: flex;
     justify-content: center;
@@ -39,6 +40,8 @@
     overflow: hidden;
     text-align: left;
     background-color: #3b5998;
+    border: 5px black solid;
+    
 }
 .imagenes{
     height: 30%;
@@ -1321,6 +1324,8 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
 }
 
 #c1 img{
@@ -1334,6 +1339,10 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    border-bottom: 5px black solid;
+    border-top: 5px black solid;
 }
 
 #c2 img{
