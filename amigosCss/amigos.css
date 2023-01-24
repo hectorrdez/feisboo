@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*Nav*/
 nav
 {
     display: flex;
@@ -36,7 +37,6 @@ nav
     text-align: center;
     background-color: #ececec;
 }
-
 .cajaCentral
 {
     min-height: 7vh;
@@ -108,10 +108,6 @@ nav
     align-items: center;
     justify-content: center;
 }
-.circularNavBtn:hover
-{
-    background-color: #d6d6d6;
-}
 .circularNavBtn a
 {
     text-decoration: none;
@@ -139,6 +135,15 @@ nav
     text-decoration: none;
     color: rgb(0, 110, 255);
 }
+/**/
+.fixed
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+}
+
 
 main
 {
@@ -152,6 +157,7 @@ main aside
     background-color: #ffffff;
     max-width: 20vw;
     box-shadow: inset 0px 0px 5px -2px rgba(0,0,0,0.75);
+    width: 17vw;
 }
 .sectionTitle
 {
@@ -182,8 +188,8 @@ main aside
     color:#1f1f1f;
     background-color: #f2f2f2;
 
-    min-height: 30px;
-    min-width: 30px;
+    max-height: 30px;
+    max-width: 30px;
     border-radius: 300px;
 }
 
@@ -214,6 +220,8 @@ main aside section a
     text-decoration: none;
     color: #1f1f1f;
 }
+
+/**/
 
 .friendList
 {
@@ -252,6 +260,8 @@ main section article img
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+
+    visibility: visible;
     
 }
 .friendCard form
@@ -267,8 +277,138 @@ main section article img
     min-width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    border: none;
+    color: #3B5998;
+    background-color: #c5e5ff;
+    transition: background-color 0.2s;
+}
+.friendCard form input:hover
+{
+    color: #c5e5ff;
+    background-color: #3B5998;
 }
 .friendCard p
 {
     font-weight: bold;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 600px)
+{
+    *
+    {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /*Nav*/
+    nav
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 7vh;
+        width: 100vw;
+        background-color: #3B5998;
+    }
+    .cajaPrimera
+    {
+        display: none;
+        width: 0;
+    }
+    .cajaCentral
+    {
+        min-height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 308px;
+    }
+    .centralBoxes
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 7vh;
+    }
+    .centralBtn
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        min-height: 50px;
+        min-width: 100px;
+        background-color: #3B5998;
+        text-align: center;
+        transition: background-color 0.2s;
+    }
+    .centralBtn a
+    {
+        text-decoration: none;
+        color: #f5f5f5;
+        font-size: 24px;
+    }
+    .cajaTercera
+    {
+        display: none;
+        width: 0;
+    }
+    .elementosCajaTercera
+    {
+        display: none;
+        width: 0px;
+    }
+    .circularNavBtn
+    {
+        min-height: 40px;
+        min-width: 40px;
+        background-color: #f2f2f2;
+        border-radius: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /**/
+    .fixed
+    {
+        display: none;
+        width: 0vw;
+    }
+    
+    
+    main
+    {
+        display: flex;
+        justify-content: center;
+        min-height: 93vh;
+        background-color: #f2f2f2;
+        box-shadow: inset 0px 0px 5px -2px rgba(0,0,0,0.75);
+    }
+    main aside
+    {
+        display: none;
+        width: 0;
+    }
+    
+    .friendList
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 80vw;
+    }
+    .friendsSection
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        width: 70vw;
+    
+        min-height: 40vh;
+    }
 }
