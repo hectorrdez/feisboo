@@ -10,29 +10,30 @@
     transition: all 0.75s ease;
     height: 60%;
     width: 300%;
-    
+
 }
 
-#logo{
+#logo {
     display: flex;
     justify-content: center;
     transform: scale(50%);
 }
 
 
-#logo:hover{
+#logo:hover {
     animation: logo_animation 0.5s linear;
 }
 
 
 @keyframes logo_animation {
-    0%{
+    0% {
         transform: scale(50%);
     }
-    50%{
+
+    50% {
         transform: scale(60%);
     }
-    
+
 }
 
 #carrusel-contenido {
@@ -41,83 +42,106 @@
     text-align: left;
     background-color: #3b5998;
     border-top: 5px black solid;
-    
-    
+
+
 }
-.imagenes{
+
+.imagenes {
     height: 30%;
     width: 120%;
     object-fit: scale-down;
 }
+
 .carrusel-elemento {
     float: left;
     width: 33.333%;
 }
+
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
+
     30% {
         margin-left: 0;
     }
+
     35% {
         margin-left: -100%;
     }
+
     65% {
         margin-left: -100%;
     }
+
     70% {
         margin-left: -200%;
     }
+
     95% {
         margin-left: -200%;
     }
+
     100% {
         margin-left: 0;
     }
 }
+
 @-webkit-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
+
     30% {
         margin-left: 0;
     }
+
     35% {
         margin-left: -100%;
     }
+
     65% {
         margin-left: -100%;
     }
+
     70% {
         margin-left: -200%;
     }
+
     95% {
         margin-left: -200%;
     }
+
     100% {
         margin-left: 0;
     }
 }
+
 @keyframes automatizacion {
     0% {
         margin-left: 0;
     }
+
     30% {
         margin-left: 0;
     }
+
     35% {
         margin-left: -100%;
     }
+
     65% {
         margin-left: -100%;
     }
+
     70% {
         margin-left: -200%;
     }
+
     95% {
         margin-left: -200%;
     }
+
     100% {
         margin-left: 0;
     }
@@ -126,7 +150,7 @@
 
 
 
-body{
+body {
     background-color: #203360;
     margin: 0;
     background-image: url(/fotos_historias/back.jpg);
@@ -135,34 +159,36 @@ body{
     background-size: 15%;
 }
 
-#main{
+#main {
     margin-top: 81%;
     background-color: #203360;
     border-right: 5px black solid;
     border-left: 5px black solid;
+    border-bottom: 5px black solid;
+    transform: scale(75%);
 }
 
 
-#comment{
+#comment {
     color: rgb(0, 0, 0);
     background-color: #F2F2F2;
     width: 50%;
-    padding:7px;
+    padding: 7px;
     border-radius: 15px;
     filter: opacity(60%);
 }
 
-#comment:hover{
+#comment:hover {
     filter: opacity(80%);
 }
 
-#button{
+#button {
     filter: opacity(60%);
     width: 25px;
     height: 25px;
 }
 
-#button:hover{
+#button:hover {
     filter: opacity(80%);
 }
 
@@ -174,35 +200,38 @@ button {
     cursor: pointer;
     color: #65676b;
     border-radius: 15px;
-  }
-  button.liked {
+}
+
+button.liked {
     color: #ffffff;
     background-color: rgb(6, 151, 235);
-  }
-  button.liked i{
+}
+
+button.liked i {
     animation: anim 0.5s ease-in-out;
     -webkit-animation: anim 0.5s ease-in-out;
-  }
-  @keyframes anim {
+}
+
+@keyframes anim {
     100% {
-      transform: rotate(-15deg) scale(1.3);
-      -webkit-transform: rotate(-15deg) scale(1.3);
-      -moz-transform: rotate(-15deg) scale(1.3);
-      -ms-transform: rotate(-15deg) scale(1.3);
-      -o-transform: rotate(-15deg) scale(1.3);
-      filter: blur(0.5px);
-      -webkit-filter: blur(0.5px);
+        transform: rotate(-15deg) scale(1.3);
+        -webkit-transform: rotate(-15deg) scale(1.3);
+        -moz-transform: rotate(-15deg) scale(1.3);
+        -ms-transform: rotate(-15deg) scale(1.3);
+        -o-transform: rotate(-15deg) scale(1.3);
+        filter: blur(0.5px);
+        -webkit-filter: blur(0.5px);
     }
-  }
+}
 
 
 
 
 
-  
 
 
-  body {
+
+body {
     margin: 0;
     width: 1200px;
     max-width: 100%;
@@ -277,27 +306,27 @@ button {
 
 
 
-.emoji--love:hover{
+.emoji--love:hover {
     animation: likess 0.5s forwards;
 }
 
-.emoji--haha:hover{
+.emoji--haha:hover {
     animation: likess 0.5s forwards;
 }
 
-.emoji--yay:hover{
+.emoji--yay:hover {
     animation: likess 0.5s forwards;
 }
 
-.emoji--wow:hover{
+.emoji--wow:hover {
     animation: likess 0.5s forwards;
 }
 
-.emoji--sad:hover{
+.emoji--sad:hover {
     animation: likess 0.5s forwards;
 }
 
-.emoji--angry:hover{
+.emoji--angry:hover {
     animation: likess 0.5s forwards;
 }
 
@@ -305,10 +334,11 @@ button {
 
 
 @keyframes likess {
-    0%{
+    0% {
         transform: scale(100%);
     }
-    50%{
+
+    50% {
         transform: scale(110%);
     }
 }
@@ -1308,7 +1338,7 @@ button {
 
 
 
-a{
+a {
     display: grid;
     font-size: 80%;
     color: rgb(255, 255, 255);
@@ -1317,12 +1347,12 @@ a{
 
 
 
-#commenta{
-background-color: black;
-color: white;
+#commenta {
+    background-color: black;
+    color: white;
 }
 
-#comments{
+#comments {
     background-color: white;
     display: flex;
     align-items: center;
@@ -1331,13 +1361,13 @@ color: white;
     border-right: 5px black solid;
 }
 
-#c1 img{
+#c1 img {
     transform: scale(30%);
 }
 
 
 
-#comments2{
+#comments2 {
     background-color: white;
     display: flex;
     align-items: center;
@@ -1345,19 +1375,6 @@ color: white;
     border: 5px black solid;
 }
 
-#c2 img{
+#c2 img {
     transform: scale(30%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-  
