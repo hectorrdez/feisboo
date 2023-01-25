@@ -67,7 +67,7 @@ nav
     min-width: 100px;
     background-color: #ffffff;
     text-align: center;
-    transition: background-color 0.2s;
+
 }
 
 .centralBtn:hover
@@ -107,6 +107,10 @@ nav
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.circularNavBtn:hover
+{
+    background-color: #d1d1d1;
 }
 .circularNavBtn a
 {
