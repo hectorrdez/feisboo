@@ -1,0 +1,196 @@
+*
+{
+    background-color: #203360;
+}
+.img1
+{
+    margin-left: 45px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.img2
+{
+    height: 20px;
+    width: 40px;
+}
+.img3
+{
+    height: 20px;
+    width: 40px;
+}
+.div1
+{
+    display: flex;
+    justify-content: center;
+}
+.div2
+{
+    display: flex;
+    justify-content: center;
+}
+
+.input2
+{
+    height: 50px;
+    width: 200px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+.input3
+{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    
+}
+.input4
+{
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 40px;
+}
+
+.div3
+{
+    display: flex;
+    justify-content: center;
+    color: white; 
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.p4
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.img4
+{
+    height: 20px;
+    width: 40px;
+}
+.div4
+{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+.img5
+{
+    height: 40px;
+    width: 60px;
+}
+.img6
+{
+    height: 40px;
+    width: 60px;
+}
+.p5
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.input5
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 40px;
+    width: 200px;
+}
+strong
+{
+    color: #95A9CA;
+    margin-left: 10px;
+}
+.logo
+{
+    width: 80px;
+    height: 80px;
+}
+.divlogo
+{
+    display: inline-flex;
+}
+.plogo
+{
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+}
+.divreg
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tituloreg{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #98A9CA;
+}
+.cajas{
+    width: 425px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: none;
+    transition: all .5s ease;
+}
+
+.cajas:hover, .cajas:focus{
+    border-left: 10px solid #1a4c7e;
+}
+
+.termino1{
+    text-align: center;
+    color: white;
+    background-color: #98A9CA;
+}
+
+.termino2{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #98A9CA;
+}
+
+.termino2:hover{
+    color: #dbdbdb;
+}
+
+.boton{
+    width: 425px;
+    padding: 15px;
+    margin-left: 20px;
+    border: none;
+    margin: 40px;
+    font-size: 20px;
+    background: white;
+}
+
+.boton:hover{
+    background: #133043;
+}
+.formreg{
+    width: 500px;
+    margin: auto;
+    margin-top: 65px;
+    background: #98A9CA;
+    border-radius: 5px;
+}
+.divforreg
+{
+    display: flex;
+    align-content: center;
+}
+
