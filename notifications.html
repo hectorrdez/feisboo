@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notificaciones</title>
-    <link rel="stylesheet" href="./resources/styles/main.css" />
+    <link rel="stylesheet" href="./Recursos/CSS/notifications.css" />
     <link rel="stylesheet" href="https://use.typekit.net/hiq3qis.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
@@ -16,14 +16,15 @@
         <div class="header-part">
             <a href="./">
                 <div class="logo-img">
-                    <img src="./resources/media/brand/logo.png" alt="logo" class="logo" />
+                    <img src="./Recursos/Imagenes//brand/logo.png" alt="logo" class="logo" />
                 </div>
             </a>
             <a href="./">
                 <div class="brand-title">Feisboo</div>
             </a>
             <div class="search-bar">
-                <label for="search"><svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em"
+                <label for="search">
+                    <svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em"
                         class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od">
                         <g fill-rule="evenodd" transform="translate(-448 -544)">
                             <g fill-rule="nonzero">
@@ -103,96 +104,196 @@
                 <a href="./profile.html" target="_self">
                     <div class="title"><span>Perfil</span></div>
                     <div class="menu-button">
-                        <img src="./resources/media/images/myprofile.jpg" alt="Mi perfil">
+                        <img src="./Recursos/Imagenes/images/myprofile.jpg" alt="Mi perfil">
                     </div>
                 </a>
             </div>
         </div>
     </header>
-    <main>
-        <div class="main-content">
-            <a href="./post?id=1" class="notification">
-                <img src="./resources/media/images/profile1.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Maria Jose ha comentado en tu foto: ¿Has comido mijo? 🥖</p>
-                    <p class="time">Hace 3h</p>
+    <div class="body-container">
+        <aside>
+            <div class="aside-container">
+                <div class="categories">
+                    <a href="./profile.html" class="category">
+                        <div class="content">
+                            <img src="./Recursos/Imagenes/images/myprofile.jpg" alt="Mi perfil" class="category-icon">
+                            <div class="category-name">Carmen Fernandez Rius-Per</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <i data-visualcompletion="css-img" class="category-icon" style="background-image: url(
+                                                        https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -296px;
+                                                        background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                        inline-block;"></i>
+                            <div class="category-name">Buscar amigos</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <div class="category-icon"><img
+                                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/eECk3ceTaHJ.png" alt=""></div>
+                            <div class="category-name">Más reciente</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <div class="category-icon"><i data-visualcompletion="css-img" class="category-icon"
+                                    style="background-image: url(
+                                                                                                                https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -75px;
+                                                                                                                background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                                                                                inline-block;"></i></div>
+                            <div class="category-name">Grupos</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <div class="category-icon"><i data-visualcompletion="css-img" class="category-icon"
+                                    style="background-image: url(
+                                                                                                                                                                        https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -407px;
+                                                                                                                                                                        background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                                                                                                                                        inline-block;"></i></div>
+                            <div class="category-name">Marketplace</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <div class="category-icon"><i data-visualcompletion="css-img" class="category-icon"
+                                    style="background-image: url(
+                                                                                                                                            https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -518px;
+                                                                                                                                            background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                                                                                                            inline-block;"></i></div>
+                            <div class="category-name">Watch</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <div class="category-icon"><i data-visualcompletion="css-img" class="category-icon"
+                                    style="background-image: url(
+                                                                                                                                                                        https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -444px;
+                                                                                                                                                                        background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                                                                                                                                        inline-block;"></i></div>
+                            <div class="category-name">Recuerdos</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <i data-visualcompletion="css-img" class="category-icon"
+                                style="background-image: url(
+                                                                                                                                                                                                    https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -185px;
+                                                                                                                                                                                                    background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                                                                                                                                                                    inline-block;"></i>
+                            <div class="category-name">Guardado</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <i data-visualcompletion="css-img" class="category-icon"
+                                style="background-image: url(
+                                                                                                                                                                                                    https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png); background-position: 0px -111px;
+                                                                                                                                                                                                    background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display:
+                                                                                                                                                                                                    inline-block;"></i>
+                            <div class="category-name">Páginas</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <i data-visualcompletion="css-img" class="category-icon"
+                                style="background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/6OUn26P9nVy.png);background-position:0
+                                0;background-size:auto;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+                            <div class="category-name">Eventos</div>
+                        </div>
+                    </a><a href="" class="category">
+                        <div class="content">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/DHBHg9MEeSC.png" alt=""
+                                class="category-icon">
+                            <div class="category-name">Administrador de anuncios</div>
+                        </div>
+                    </a>
                 </div>
-                <img src="./resources/media/images/post1.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=1" class="notification">
-                <img src="./resources/media/images/profile1.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Maria Jose le ha dado a me gusta a tu foto</p>
-                    <p class="time">Hace 3h</p>
-                </div>
-                <img src="./resources/media/images/post1.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=1" class="notification">
-                <img src="./resources/media/images/profile4.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Pepe le ha comentado en tu foto: vaja fotaza 😍</p>
-                    <p class="time">Hace 4h</p>
-                </div>
-                <img src="./resources/media/images/post1.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=1" class="notification">
-                <img src="./resources/media/images/profile3.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Helena le ha dado a me gusta a tu foto</p>
-                    <p class="time">Hace 4h</p>
-                </div>
-                <img src="./resources/media/images/post1.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=1" class="notification">
-                <img src="./resources/media/images/profile1.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Maria Jose le ha dado a me gusta a tu foto</p>
-                    <p class="time">Hace 5h</p>
-                </div>
-                <img src="./resources/media/images/post2.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=1" class="notification">
-                <img src="./resources/media/images/profile3.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Helena ha comenzado a seguirte</p>
-                    <p class="time">Hace 1 dia</p>
-                </div>
-                <img src="./resources/media/images/post1.jpg" alt="post" class="where not-visible" />
-            </a>
-            <a href="./perfil?id=324" class="notification">
-                <img src="./resources/media/images/profile4.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">Pepe ha comenzado a seguirte</p>
-                    <p class="time">Hace 1 semana</p>
-                </div>
-                <img src="./resources/media/images/post1.jpg" alt="post" class="where not-visible" />
-            </a>
-            <a href="./post?id=2" class="notification">
-                <img src="./resources/media/images/profile5.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">de la Cruz le ha dado a me gusta a tu foto</p>
-                    <p class="time">Hace mas de 1 semana</p>
-                </div>
-                <img src="./resources/media/images/post2.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=2" class="notification">
-                <img src="./resources/media/images/profile6.jpeg" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">marietegarfer66 le ha dado a me gusta a tu foto</p>
-                    <p class="time">Hace mas de 1 semana</p>
-                </div>
-                <img src="./resources/media/images/post2.jpg" alt="post" class="where" />
-            </a>
-            <a href="./post?id=2" class="notification">
-                <img src="./resources/media/images/profile7.png" alt="perfil1" class="profile" />
-                <div class="quote">
-                    <p class="text">jortifas le ha dado a me gusta a tu foto</p>
-                    <p class="time">Hace mas de 1 semana</p>
-                </div>
-                <img src="./resources/media/images/post2.jpg" alt="post" class="where" />
-            </a>
-        </div>
-    </main>
+            </div>
+        </aside>
+        <main>
+            <div class="main-content">
+                <a href="./post?id=1" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile1.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Maria Jose ha comentado en tu foto: ¿Has comido mijo? 🥖</p>
+                        <p class="time">Hace 3h</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post1.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=1" class="notification">
+                    <img src="./Recursos/Imagenes/" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Maria Jose le ha dado a me gusta a tu foto</p>
+                        <p class="time">Hace 3h</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post1.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=1" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile4.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Pepe le ha comentado en tu foto: vaja fotaza 😍</p>
+                        <p class="time">Hace 4h</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post1.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=1" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile3.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Helena le ha dado a me gusta a tu foto</p>
+                        <p class="time">Hace 4h</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post1.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=1" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile1.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Maria Jose le ha dado a me gusta a tu foto</p>
+                        <p class="time">Hace 5h</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post2.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=1" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile3.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Helena ha comenzado a seguirte</p>
+                        <p class="time">Hace 1 dia</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post1.jpg" alt="post" class="where not-visible" />
+                </a>
+                <a href="./perfil?id=324" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile4.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">Pepe ha comenzado a seguirte</p>
+                        <p class="time">Hace 1 semana</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post1.jpg" alt="post" class="where not-visible" />
+                </a>
+                <a href="./post?id=2" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile5.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">de la Cruz le ha dado a me gusta a tu foto</p>
+                        <p class="time">Hace mas de 1 semana</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post2.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=2" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile6.jpeg" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">marietegarfer66 le ha dado a me gusta a tu foto</p>
+                        <p class="time">Hace mas de 1 semana</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post2.jpg" alt="post" class="where" />
+                </a>
+                <a href="./post?id=2" class="notification">
+                    <img src="./Recursos/Imagenes/images/profile7.png" alt="perfil1" class="profile" />
+                    <div class="quote">
+                        <p class="text">jortifas le ha dado a me gusta a tu foto</p>
+                        <p class="time">Hace mas de 1 semana</p>
+                    </div>
+                    <img src="./Recursos/Imagenes/images/post2.jpg" alt="post" class="where" />
+                </a>
+            </div>
+        </main>
+        <aside>
+            <div class="aside-content">
+
+            </div>
+        </aside>
+    </div>
 </body>
 
 </html>
