@@ -13,7 +13,10 @@ header {
   background-color: white;
   font-size: 12px;
   padding: 0 16px;
-  box-shadow: 0px 1px 3px #F0F2F5;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.7);
 }
 header .header-part {
   display: flex;
@@ -169,77 +172,89 @@ header .header-part .menu .style-2 p {
   align-items: center;
 }
 
+body {
+  background-color: #F0F2F5;
+}
+
 .body-container {
   background-color: #F0F2F5;
   display: flex;
-  position: absolute;
-  top: 0;
+  justify-content: center;
 }
-.body-container aside {
+.body-container .body-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.body-container .body-content aside {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  min-width: 750px;
-  position: absolute;
   height: fit-content;
+  width: 360px;
 }
-.body-container aside .aside-container {
+.body-container .body-content aside .aside-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   width: fit-content;
   padding-top: 16px;
 }
-.body-container aside .aside-container .categories {
+.body-container .body-content aside .aside-container .categories {
   display: flex;
   flex-direction: column;
+  padding: 0 8px;
 }
-.body-container aside .aside-container .categories a.category {
+.body-container .body-content aside .aside-container .categories a.category {
   display: flex;
   text-decoration: none;
   color: #050505;
   background-color: #F0F2F5;
   transition: 0.2s background-color ease;
   border-radius: 10px;
+  justify-content: flex-start;
 }
-.body-container aside .aside-container .categories a.category div.content {
+.body-container .body-content aside .aside-container .categories a.category div.content {
   display: flex;
   align-items: center;
   height: 52px;
-  gap: 0.5rem;
+  gap: 1rem;
   width: 344px;
   padding: 0 8px;
 }
-.body-container aside .aside-container .categories a.category div.content .category-icon {
+.body-container .body-content aside .aside-container .categories a.category div.content .category-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 36px;
   height: 36px;
 }
-.body-container aside .aside-container .categories a.category div.content .category-name {
-  font-weight: bold;
+.body-container .body-content aside .aside-container .categories a.category div.content .category-name {
   font-size: 15px;
+  font-weight: 600;
 }
-.body-container aside .aside-container .categories a.category div.content img {
+.body-container .body-content aside .aside-container .categories a.category div.content img {
   height: 36px;
   width: 36px;
   border-radius: 50%;
 }
-.body-container aside .aside-container .categories a.category:hover {
+.body-container .body-content aside .aside-container .categories a.category:hover {
   background-color: #E4E6EB;
 }
-.body-container main {
+.body-container .body-content main {
   width: 100%;
-  max-width: 100vw;
-  height: 100vh;
   background-color: #F0F2F5;
-  padding: 0 32px;
+  padding-top: 10px;
+  margin: 0 32px;
+  display: flex;
+  justify-content: center;
+  max-width: 680px;
 }
-.body-container main .main-content {
-  background-color: white;
+.body-container .body-content main .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.body-container main .main-content .notification {
+.body-container .body-content main .main-content .notification {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 5rem;
@@ -247,37 +262,41 @@ header .header-part .menu .style-2 p {
   text-decoration: none;
   color: black;
   border: 2px solid white;
-  border-top-color: #E4E6EB;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 0 1px 2px rgba(128, 128, 128, 0.7);
 }
-.body-container main .main-content .notification .profile {
-  height: 5rem;
-  width: 5rem;
+.body-container .body-content main .main-content .notification .profile-img {
+  width: 80px;
+  height: 80px;
+}
+.body-container .body-content main .main-content .notification .profile-img .profile {
+  object-fit: contain;
   border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }
-.body-container main .main-content .notification .quote {
+.body-container .body-content main .main-content .notification .quote {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 2rem;
 }
-.body-container main .main-content .notification .quote p {
+.body-container .body-content main .main-content .notification .quote p {
   padding: 0.2rem 0;
   font-style: italic;
 }
-.body-container main .main-content .notification .quote .text {
-  font-size: 21px;
+.body-container .body-content main .main-content .notification .quote .text {
   font-style: normal;
 }
-.body-container main .main-content .notification .quote .time {
+.body-container .body-content main .main-content .notification .quote .time {
   color: #808080;
 }
-.body-container main .main-content .notification .where {
-  height: 4.5rem;
-  width: 4.5rem;
-}
-.body-container main .main-content .notification:hover {
-  border-color: #808080;
+.body-container .body-content main .main-content .notification .where {
+  height: 4.5rem !important;
+  width: 4.5rem !important;
 }
 
 a {
@@ -285,7 +304,7 @@ a {
 }
 a div.title {
   position: absolute;
-  top: 52px;
+  top: 53px;
   left: 0;
   justify-content: center;
   color: white;
@@ -298,7 +317,7 @@ a div.title {
 a div.title span {
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #1f1f1f;
+  background-color: rgba(31, 31, 31, 0.85);
   width: fit-content;
 }
 
@@ -316,6 +335,11 @@ a:hover div.title span {
 @media screen and (max-width: 1200px) {
   header .header-part a .brand-title {
     display: none;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .body-container .body-content {
+    max-width: 1464px;
   }
 }
 
