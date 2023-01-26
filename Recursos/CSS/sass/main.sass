@@ -1,9 +1,12 @@
-$color-1: #f2f2f2
+$color-1: #E4E6EB
 $color-2: #98a9ca
 // $color-3: #3b5998
 $color-3: #1877f2
 $color-4: #203360
 $color-5: #808080
+
+
+$body-background: #F0F2F5
 
 $header-height: 56px
 
@@ -17,14 +20,14 @@ $header-height: 56px
 header
     display: flex
     justify-content: space-between
-    position: sticky
-    top: 0
     height: $header-height
     background-color: white
     font-size: 12px
     padding: 0 16px
+    position: sticky
     z-index: 2
-    box-shadow: 5px 5px 5px $color-1
+    top: 0
+    box-shadow: 0px 1px 2px rgba($color-5, 0.7)
     .header-part
         display: flex
         align-items: center
@@ -160,54 +163,117 @@ header
                     justify-content: center
                     align-items: center
 
-main
-    background-color: $color-1
-    min-height: 100vh
+body
+    background-color: $body-background
+.body-container
+    background-color: $body-background
     display: flex
-    flex-direction: column
-    align-items: center
-    .main-content
-        background-color: white
+    justify-content: center
+    .body-content
         width: 100%
-        max-width: 50vw
-        height: 100vh
-        .notification
+        display: flex
+        justify-content: space-between
+        aside
             display: flex
-            justify-content: space-between
-            padding: .5rem 5rem
-            align-items: center
-            text-decoration: none
-            color: black
-            border: 2px solid white
-            border-top-color: $color-1
-            .profile
-                height: 5rem
-                width: 5rem
-                border-radius: 50%
-            .quote
-                width: 100%
+            flex-direction: column
+            // min-height: calc( 100vh - $header-height )
+            height: fit-content
+            width: 360px
+            .aside-container
                 display: flex
                 flex-direction: column
-                justify-content: center
-                padding: 0 2rem
-                p
-                    padding: .2rem 0
-                    font-style: italic
-                .text
-                    font-size: 21px
-                    font-style: normal
-                .time
-                    color: $color-5
-            .where
-                height: 4.5rem
-                width: 4.5rem
-            &:hover
-                border-color: $color-5
+                align-items: stretch
+                width: fit-content
+                padding-top: 16px
+                .categories
+                    display: flex
+                    flex-direction: column
+                    padding: 0 8px
+                    a.category
+                        display: flex
+                        text-decoration: none
+                        color: #050505
+                        background-color: $body-background
+                        transition: .2s background-color ease
+                        border-radius: 10px
+                        justify-content: flex-start
+                        div.content
+                            display: flex
+                            align-items: center
+                            height: 52px
+                            gap: 1rem
+                            width: 344px
+                            padding: 0 8px
+                            .category-icon
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                width: 36px
+                                height: 36px
+                            .category-name
+                                font-size: 15px
+                                font-weight: 600
+                            img
+                                height: 36px
+                                width: 36px
+                                border-radius: 50%
+                        &:hover
+                            background-color: $color-1
+        main
+            width: 100%
+            background-color: $body-background
+            padding-top: 10px
+            margin: 0 32px
+            display: flex
+            justify-content: center
+            max-width: 680px
+            .main-content
+                display: flex
+                flex-direction: column
+                gap: 1rem
+                .notification
+                    display: flex
+                    justify-content: space-between
+                    padding: .5rem 5rem
+                    align-items: center
+                    text-decoration: none
+                    color: black
+                    border: 2px solid white
+                    background-color: white
+                    border-radius: 10px
+                    font-size: 15px
+                    box-shadow: 0 1px 2px rgba($color-5, 0.7)
+                    .profile-img
+                        width: 80px
+                        height: 80px
+                        .profile
+                            object-fit: contain
+
+                            border-radius: 50%
+                            height: 80px
+                            width: 80px
+
+                    .quote
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        padding: 0 2rem
+                        p
+                            padding: .2rem 0
+                            font-style: italic
+                        .text
+                            font-style: normal
+                        .time
+                            color: $color-5
+                    .where
+                        height: 4.5rem !important
+                        width: 4.5rem !important
 a
     position: relative
     div.title
         position: absolute
-        top: 52px
+        top: 53px
         left: 0
         justify-content: center
         color: white
@@ -219,7 +285,8 @@ a
         span
             padding: .5rem
             border-radius: .5rem
-            background-color: #1f1f1f
+            background-color: rgba(#1f1f1f, 0.85)
+
             width: fit-content
 a:hover
     div.title
@@ -228,3 +295,14 @@ a:hover
             display: flex
 .not-visible
     visibility: hidden
+
+@media screen and (max-width: 1200px)
+    header
+        .header-part
+            a
+                .brand-title
+                    display: none
+@media screen and (min-width: 1921px)
+    .body-container
+        .body-content
+            max-width: 1464px
