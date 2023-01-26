@@ -1,0 +1,132 @@
+body
+{
+    background-color: rgb(175,189,212);
+}
+
+/*clase para fotos de perfil e items de menú*/
+body .profile
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+body main 
+{
+    height: fit-content;
+    background-color: rgb(175,189,212);
+}
+body .body-content
+{
+       height: calc(100vh - 56px);
+       display: flex;
+       align-items: stretch;
+       width: 100%;    
+}
+
+aside
+{
+    background-color: rgb(175, 189, 212);
+    width: 40%;
+}
+
+aside .menu
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+aside .item
+{
+    border-radius: 10px;
+    background-color: rgb(109,132,180);
+    display: flex;
+    align-items: center;
+}
+
+aside .item a 
+{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+aside .contacto
+{
+    border-radius: 10px;
+     background-color: rgb(109,132,180);
+     display: flex;
+     align-items: center;
+}
+
+aside .contacto a 
+{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+aside .contactos
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+main
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(175, 189, 212);
+    max-width: 680px;
+}
+
+main .post
+{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+
+main .post-header
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(109, 132, 180);
+    display: flex;
+    height: 100%;
+    width: 100%;  
+    align-items: center; 
+}
+
+main .post-header a 
+{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+main .photo
+{
+    width: 100%;
+}
+
+main .ajustar-foto
+{
+    width: 100%;   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;        
+}
+
+
+
+
