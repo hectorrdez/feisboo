@@ -187,6 +187,141 @@ body {
   display: flex;
   justify-content: center;
 }
+.body-container .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.body-container .profile .profile-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.body-container .profile .profile-banner img {
+  width: 1250px;
+  height: 480px;
+  padding: 0px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.body-container .profile .profile-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1186px;
+  height: 102px;
+  border-bottom: 1px solid #cbcaca;
+}
+.body-container .profile .profile-stats .profile-part {
+  display: flex;
+  align-items: center;
+}
+.body-container .profile .profile-stats .profile-part .profile-controls {
+  display: flex;
+  gap: 5px;
+}
+.body-container .profile .profile-stats .profile-part .profile-controls button {
+  padding: 0 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #1877f2;
+  transition: 0.2s background-color ease;
+  cursor: pointer;
+  height: 36px;
+  border: none;
+}
+.body-container .profile .profile-stats .profile-part .profile-controls button:hover {
+  background-color: #244dae;
+}
+.body-container .profile .profile-stats .profile-part .profile-controls button.send-message {
+  color: #050505;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+.body-container .profile .profile-stats .profile-part .profile-controls button.send-message:hover {
+  background-color: #808080;
+}
+.body-container .profile .profile-stats .profile-img {
+  position: relative;
+  top: -40px;
+}
+.body-container .profile .profile-stats .profile-img img {
+  height: 168px;
+  width: 168px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.body-container .profile .profile-stats .profile-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+}
+.body-container .profile .profile-stats .profile-summary .profile-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #050505;
+  position: relative;
+  padding: 0 0 8px 0;
+}
+.body-container .profile .profile-stats .profile-summary .profile-name span {
+  font-size: 28px;
+  padding: 0 5px;
+}
+.body-container .profile .profile-stats .profile-friends {
+  color: #65676b;
+  font-size: 17px;
+  font-weight: bold;
+}
+.body-container .profile .profile-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 1186px;
+  height: 100%;
+  padding: 0.25rem 0 0 0;
+}
+.body-container .profile .profile-menu a.nav-button {
+  height: 60px;
+  width: 130px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-color: white;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  border-bottom: 3px solid white;
+  position: relative;
+}
+.body-container .profile .profile-menu a.nav-button div:not(.title) {
+  background-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+}
+.body-container .profile .profile-menu a.nav-button:not(.body-container .profile .profile-menu a.nav-button.selected):hover div {
+  background-color: rgba(228, 230, 235, 0.5);
+}
+.body-container .profile .profile-menu a.selected {
+  border: 0;
+  text-decoration-color: #1877f2;
+  border-bottom: 3px solid #1877f2;
+}
+.body-container .profile .profile-menu a.selected div {
+  color: #1877f2 !important;
+}
 .body-container .body-content {
   width: 100%;
   display: flex;
@@ -355,6 +490,10 @@ body {
   height: 4.5rem !important;
   width: 4.5rem !important;
 }
+.body-container .body-content main .main-content .notification:hover {
+  animation-name: notification-up;
+  animation-duration: 0.5s;
+}
 
 a {
   position: relative;
@@ -440,6 +579,15 @@ a:hover div.title span {
   }
   main {
     padding: 0 !important;
+  }
+}
+@keyframes notification-up {
+  from {
+    position: relative;
+    top: 0px;
+  }
+  to {
+    top: -10px;
   }
 }
 
