@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<principal>
+    <usuarios>
+        <usuario1>
+            <usuario>Maria Jose Fernandez</usuario>
+            <password>12345689</password>
+        </usuario1>
+        <usuario2>
+            <usuario>Cristina Hernandez</usuario>
+            <password>16092013</password>
+        </usuario2>
+        <usuario3>
+            <usuario>Enrique Gonzalez</usuario>
+            <password>26081491</password>
+        </usuario3> 
+    </usuarios>
+    <enlacerecuperar>¿Olvidaste la contraseña?</enlacerecuperar>
+    <boton>Acceder</boton>
+    <enlaceregistrar>¿Eres nuevo? Registrate aquí</enlaceregistrar>
+    
+</principal>

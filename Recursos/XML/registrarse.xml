@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registro>
+    <nombre></nombre>
+    <apellido></apellido>
+    <email></email>
+    <password></password>
+    <check>Estoy de acuerdo con los Terminos y Condiciones</check>
+    <boton>REGISTRAR</boton>
+</registro>
