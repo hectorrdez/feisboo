@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href=""?>
+
+<cards>
+    <friends>
+        <imagen><imagen>
+        <nombre>Mari Carmen</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Maria Jose</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Pepe</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Helena</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Cristina Hernández</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Antonio Rodriguez</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Pedro Fernández</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Olivia Clark</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Sofía Gutierrez</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Estevan Gómez</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Luís González</nombre>
+    </friends>
+    <friends>
+        <imagen><imagen>
+        <nombre>Enrique González</nombre>
+    </friends>
+</cards>
