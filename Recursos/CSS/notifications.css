@@ -332,6 +332,8 @@ body {
   flex-direction: column;
   height: fit-content;
   width: 360px;
+  position: sticky;
+  top: 56px;
 }
 .body-container .body-content aside .aside-container {
   display: flex;
